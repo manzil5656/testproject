@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halda Denim</title>
+<!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <link rel="stylesheet" type="text/css" href="css/products.css"> 
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (before closing body) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+</head>
+<body>
+
+
+<nav>
+    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+    <span class="hamburger">&#9776;</span>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#about.html">About</a>
+        <ul>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Our Vision</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#services.html">Services</a>
+        <ul>
+          <li><a href="#">Sewing</a></li>
+          <li><a href="#">Knitting</a></li>
+          <li><a href="#">Embroidery</a></li>          
+        </ul>
+      </li>
+      <li>
+        <a href="products.html">Products</a>
+        <ul>
+          <li><a href="#">Men's</a></li>
+          <li><a href="#">Ladies</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+// Hamburger toggle
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+</script>
+
+  <!-- Bootstrap Carousel Slider -->
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex align-items-center justify-content-center vh-100 text-white"  style="background: url('img/s01.jpg') no-repeat center center/cover;">
+          <h1 >WELCOME TO HALDA DENIM</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex align-items-center justify-content-center vh-100 text-white"  style="background: url('img/s02.jpg') no-repeat center center/cover;">
+          <h3 >Trusted Manufacturer of Premium Denim & Casual Wear</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex align-items-center justify-content-center vh-100 text-white"  style="background: url('img/s03.jpg') no-repeat center center/cover;">
+          <h3 >Trusted Manufacturer of Premium Denim & Casual Wear</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+  
+
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container"> <h2 style="text-align-last: center;">About Us</h2>
+      <div class="content">
+        <div class="text">          
+          <p>At Halda Denim, our story began in 2020 in Narayanganj, Bangladesh. What started as a young dream has grown into a trusted name in denim and casual wear. We design and manufacture baggy jeans, trousers, jackets, and polo shirts—always keeping global fashion trends and quality standards in mind. Behind every piece is the skill of our dedicated team, who care about details from fabric to finishing.In just a few years, we’ve built partnerships across America, Europe, and the Gulf countries, earning trust through consistent quality, timely delivery, and honest commitment. But for us, it’s never just about making garments. It’s about creating style, value, and confidence for the brands we work with—and for the people who wear our products. Halda Denim: A young company with a bold vision, ready to bring your ideas to life.</p>
+
+          <button id="learnMore">Learn More</button>
+        </div>
+        <div class="image">
+          <img src="img/s02.jpg" alt="Halda Denim">
+        </div>
+      </div>
+    </div>
+
+ <!-- Mission Section -->
+  <section id="mission" class="section">
+    <div class="container"> <h2 style="text-align-last: center;">Our Mission</h2>
+      <div class="content">
+        <div class="text">          
+          <p>At Halda Denim, our mission is simple: to craft denim and casual wear that combine style, comfort, and durability. We believe fashion should not only look good but also feel good and last.
+With a focus on quality, precision, and timely delivery, we work closely with our clients to create solutions that fit their vision and strengthen their brands. By blending modern manufacturing, skilled craftsmanship, and innovative ideas, we aim to deliver garments that stand out in global markets.
+
+More than a manufacturer, we see ourselves as a reliable partner—helping our customers grow, adapt, and succeed in an ever-changing fashion world.</p>
+
+          <button id="learnMore">Learn More</button>
+        </div>
+
+        <div class="image">
+          <img src="img/misson.jpg" alt="Mission">
+        </div>
+      </div>
+    </div>
+
+ <!-- Vision Section -->
+  <section id="vision" class="section">
+    <div class="container"> <h2 style="text-align-last: center;">Our Vision</h2>
+      <div class="content">
+        <div class="text">          
+          <p>At Halda Denim, we aim to be a global leader in premium denim and casual wear, recognized for quality, innovation, and reliability.
+We combine modern technology with traditional craftsmanship to create products that meet today’s fashion trends while anticipating tomorrow’s needs. Our goal is to be a trusted partner for top brands worldwide, delivering garments with exceptional attention to detail.
+As we grow, we remain committed to long-term partnerships, outstanding service, and positive impact on communities and the environment.
+Halda Denim envisions a future where our brand stands for sustainability, style, and excellence in the denim industry.
+</p>
+
+          <button id="learnMore">Learn More</button>
+        </div>
+
+        <div class="image">
+          <img src="img/vision.jpg" alt="Vision">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Chairman Massage Section
+  <section id="chairman's-message" class="section">
+    <div class="container"> <h2 style="text-align-last: center;">Chairman's Massage</h2>
+      <div class="content">
+        <div class="text">          
+          <p>Established in 2020, our factory has been dedicated to producing high-quality knitted garments. With a workforce of over 600 skilled workers, we achieve a monthly output of approximately 120,000 pieces. Our product range includes a wide variety of clothing styles tailored to meet diverse market demands. Our garments are primarily exported to the United States, Europe, and Gulf countries. We are proud to be a fixed and reliable manufacturing partner for numerous internationally renowned brands. Equipped with state-of-the-art machinery and a robust quality assurance system, we ensure consistent excellence in every product. Our tested techniques and expert craftsmanship enable us to meet the highest industry standards. In addition to our in-house capabilities, we have dedicated cooperative factories that handle large-scale dyeing, printing, embroidering, and washing. These facilities are well-equipped to fulfill all requirements necessary for producing premium garments. Our design and sampling teams are committed to staying ahead of trends, continuously developing the latest and most appealing styles for our clients. Beyond just sample making, we provide innovative ideas and garment solutions to support your creative vision. Our export development and sales department is focused on delivering exceptional service through proactive communication and collaboration. We aim to simplify your sourcing process and help maximize your profitability. We fully understand that top-tier quality and reliable service are the foundations of effective production. When your garments are in our hands, rest assured—we’re more than happy to deliver excellence.
+          </p>
+
+          <button id="learnMore">Learn More</button>
+        </div>
+
+        <div class="chairman-image">
+          <img src="img/MoinUddin-.jpeg" alt="Chairman ">
+        </div>
+      </div>
+    </div>
+ -->
+
+  <!-- Services Section -->
+<section>
+
+
+<div class="container"> <h2 style="text-align-last: center;">Services</h2>
+  <br>
+  <div class="row">
+
+    <!-- Service 1 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card h-100 text-center shadow-sm border-0">
+        <img src="img/Sweing.jpg" class="card-img-top" alt="Sweing" style="height:250px; object-fit:cover; ">
+        <div class="card-body">
+          <h5 class="card-title">Sweing</h5>
+          <p class="card-text text-muted">Sewing is the practice of joining materials, particularly fabric, together using a needle and thread, either by hand or with a sewing machine. It involves using stitches to fasten materials, and can be used for a wide range of applications, from clothing construction to mending and household furnishings.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card h-100 text-center shadow-sm border-0">
+        <img src="img/Knitting.webp" class="card-img-top" alt="Knitting" style="height:250px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Knitting</h5>
+          <p class="card-text text-muted">Knitting is a method of creating fabric using needles to interlock loops of yarn, often resulting in garments and other textile items. It involves using needles to pull and loop yarn, creating a series of interconnected loops that form a finished fabric.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card h-100 text-center shadow-sm border-0">
+        <img src="img/Embroidery.jpg" class="card-img-top" alt="Print & Embroidery" style="height:250px; object-fit:cover;">
+        <div class="card-body">
+          <h5 class="card-title">Print & Embroidery</h5>
+          <p class="card-text text-muted">Print and embroidery are two distinct methods of decorating fabric. Print uses ink, dyes, or heat transfer to apply designs, while embroidery creates designs by stitching threads onto fabric. Print is generally faster and more cost-effective for large quantities and complex designs, while embroidery is known for its durable, textured finish, often used for logos and smaller details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--  Products -->
+<section>
+    <h2 style="text-align-last: center;">Products</h2>
+    <div data-product-id="foolwa">
+    <div data-product-cats="Men's">
+
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=1">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 1</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Ladies">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=2">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 2</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Kides">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=3">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 3</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Men's">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=4">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 4</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Men's">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=5">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 5</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Men's">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=6">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 6</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Ladies">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=7">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 7</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+
+        <div product-cats="Ladies">
+            <a href="#">
+                <img class="product-img" src="https://picsum.photos/600/400?random=8">
+            </a>
+            <div class="product-info">
+                <div class="product-title">Random Image 8</div>
+                <div class="product-descr">Random Image From picsum.photos.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!--  portfolio -->
+
+<section class="portfolio-section"> <h2 style="text-align-last: center;"> Portpofio</h2>
+    <div class="portfolio-container"> 
+>
+  <!-- embed responsive iframe --> 
+<!-- ======================= -->
+
+<div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+  <div class="responsive-wrapper 
+     responsive-wrapper-wxh-572x612"
+     style="-webkit-overflow-scrolling: touch; overflow: auto;">
+
+    <iframe src="Profile.pdf"> 
+      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+    </iframe>
+    
+  </div>
+</div>
+
+</section>
+
+
+
+      <section class="contact-section"> <h2 style="text-align-last: center;"> Contact Us</h2>
+    <div class="contact-container"> 
+
+        <!-- Contact Form -->
+        <div class="contact-box">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-box">
+            <h3>Find Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.379022776074!2d90.5046!3d23.6245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b87e2c8e6c7b%3A0xf13f8cf2!2sFatullah%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1697648295176!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+
+
+  <footer>
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-column">
+            <img src="img/logo.png" alt="Halda Denim" style="width:150px; margin-bottom:15px;">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+
+
+   <div class="footer-column">
+    <h3>Address</h3>
+    <p><i class="fa-solid fa-location-dot"></i> South Shiachar, Kutubpur, Fatullah,<br>Narayanganj, Bangladesh</p>
+    <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +880 1300-996136</p>
+    <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@haldadenim.com">info@haldadenim.com</a></p>
+    <p><i class="fa-solid fa-globe"></i> <strong>Web:</strong> <a href="http://www.haldadenim.com">www.haldadenim.com</a></p>
+</div>
+
+
+       <!--  <div class="footer-column">
+            <h3>Address</h3>
+            <p>South Shiachar, Kutubpur, Fatullah,<br>Narayanganj, Bangladesh</p>
+            <p><strong>Phone:</strong> +880 1300-996136</p>
+            <p><strong>Email:</strong> <a href="mailto:info@haldadenim.com">info@haldadenim.com</a></p>
+            <p><strong>Web:</strong> <a href="http://www.haldadenim.com">www.haldadenim.com</a></p>
+        </div>
+ -->
+    </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> HALDA DENIM | <a href="manzil5656@gmail.com">MD MANZIL MIAH</a>. All Rights Reserved.
+        </div>
+
+        <script>
+            // Auto update year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+</footer>
+</section>
+
+<!-- Your custom scripts -->
+<script src="js/about.js"></script>
+<script src="js/products.js"></script>
+
+
+<!-- jQuery + Bootstrap JS -->
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap CSS & Icons (if not already included) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<!-- Bootstrap CSS (if not included already) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (if not included already) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>

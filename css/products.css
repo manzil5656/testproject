@@ -1,0 +1,341 @@
+
+
+/* Container: use attribute selector so no HTML class change required */
+
+
+[data-product-id] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns on desktop */
+  gap: 10px;
+  align-items: start;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Each product item is the direct child div inside the container */
+[data-product-id] > div {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  transition: transform .22s ease, box-shadow .22s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect */
+[data-product-id] > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.10);
+}
+
+/* Make sure images fill the top area (covers <a><img> or direct <img>) */
+[data-product-id] a,
+[data-product-id] a img,
+[data-product-id] img.product-img {
+  display: block;
+  width: 100%;
+  height: auto;            /* adjust height as needed */
+  object-fit: cover;
+  text-decoration: none;
+}
+
+/* Product info area (you already use class product-info) */
+.product-info {
+  padding: 12px;
+  text-align: center;
+  flex: 1 1 auto; /* let info stretch so product cards are equal height */
+}
+
+/* Titles and descriptions (your classes: product-title, product-descr) */
+.product-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.product-descr,
+.product-desc {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
+
+
+/*   Light room*/
+
+/* Lightbox Styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+#lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#lightbox .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  transform: translateY(-50%);
+}
+
+#lightbox .controls span {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*   Light room*/
+
+
+
+
+/* Responsive breakpoints */
+@media (max-width: 1100px) {
+  [data-product-id] {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  [data-product-id] {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+  [data-product-id] a img,
+  [data-product-id] img.product-img { height: 200px; }
+}
+
+@media (max-width: 480px) {
+  [data-product-id] {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+  [data-product-id] a img,
+  [data-product-id] img.product-img { height: 180px; }
+}
+
+/* --- Optional high-specificity fallback (uncomment if other CSS still overrides) ---
+[data-product-id] {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+*/
+
+
+/*body{
+margin:0;
+padding:0;
+font-family: 'Inter';
+}
+
+h1, h2, h3, h4, h5{
+border-bottom:1px solid silver;
+padding:10px 0;
+}
+
+h1{text-align:center; font-size: 3rem;}
+
+.body-ctr{
+padding:20px 0;
+box-sizing:border-box;
+
+}
+
+.ctr{
+max-width:960px;
+padding:40px;
+box-sizing:border-box;
+margin:0 auto;
+font:12px;
+}
+
+blockquote {
+background-color: #eee;
+padding: 15px 25px;
+font: italic 16px/24px;
+display: block;
+border-left: 10px solid #F04E00;
+border-left-color: gray;
+margin: 10px 0;
+text-align: left;
+}
+
+pre{
+border:1px solid silver;
+background-color:#ddd;
+overflow-x: auto;
+font-size:16px;
+padding:5px;
+}
+
+.demo-list-33 > ul{
+margin:0;
+padding:10px 0;
+width:33.3333%;
+float:left;
+box-sizing: border-box;
+}
+
+.demo-list-33 > ul > li{
+list-style: none;
+text-align:center;
+padding:5px;
+border: 1px solid silver;
+margin-bottom: -1px;
+margin-right: -1px;
+}
+
+.demo-list-33:before, .demo-list-33:after{
+content:' ';
+clear:both;
+display:block;
+}
+
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.tbl{
+border-collapse:collapse;
+}
+
+.tbl tr > td{
+border:1px solid silver;
+padding:5px;
+vertical-align:top;
+}
+
+.tbl tr > th{
+border:1px solid silver;
+padding:10px 0;
+text-align:center;
+font:bold 16px arial, sans-serif;
+}
+
+.tbl tr:nth-child(even){background-color:#ddd;}
+
+.text-center{text-align:center;margin-top:30px;}
+
+button{
+padding: 10px 15px;
+margin: 5px 0;
+  border: 1px solid blue;
+border-radius: 4px;
+background: #007BFF;
+color: #fff;
+cursor: pointer;
+
+}
+
+button:hover{
+background: #0056b3;
+}
+
+select {
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color:#fff;
+  box-sizing:border-box;
+}
+
+label{
+font:bold 14px arial;
+margin-bottom:5px;
+display:block;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.column25{
+width:25%;
+box-sizing: border-box;
+}
+
+#demo-apply{
+border:1px solid silver;
+padding:10px;
+margin:20px 0;
+}
+
+[for="btn"]{
+animation: blinker 0.5s infinite;
+color:green;
+}
+
+.demo-blank-p{
+margin:20px;
+}
+
+.my-demo-class .tabx-ui{
+background-color:gold;
+}
+
+@keyframes blinker{
+	0%{
+		opacity:0.01;
+	},
+	100%{
+		opacity:0.99;
+	}
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .column25 {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
+.products-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media(min-width: 768px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media(min-width: 992px) {
+  .products-grid { grid-template-columns: repeat(4, 1fr); } /* 4 per row desktop */
+}
+.product-img { width: 100%; height: 220px; object-fit: cover; display:block; }
+*/

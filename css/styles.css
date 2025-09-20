@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+   
+  <!-- Navigation -->
+
+
+ body{font-family:Arial, 
+      sans-serif;margin:0;}
+
+    /* Navbar */
+    nav {
+  background: #454545;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; /* or fixed */
+  top: 0;           /* stick to the top */
+  width: 100%;      /* full width */
+  z-index: 1000;
+
+}
+
+    .menu{
+      
+      display:flex;
+      list-style: none;
+      margin:0;
+
+
+    }
+    .menu li{
+      position:relative;
+    }
+    .menu li a{
+      display:block;
+      list-style: none;
+      text-decoration: none;
+      padding:10px 15px;
+      color:#fff;
+      transition:0.3s;
+    }
+    .menu li a:hover{background:#8bc440;}
+
+    /* Submenu */
+    .menu li ul{
+      padding: 5px;
+      position:absolute;
+      top:100%;
+      left:0;
+      background:#454545;
+      min-width:180px;
+      display:none;
+      flex-direction:column;
+      z-index:1000;
+      list-style-type:none ;
+
+    }
+    .menu li:hover ul{display:block;}
+    .menu li ul li a{padding:5px;}
+
+    /* Hamburger */
+    /* Default (desktop view) */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none; /* hide hamburger on desktop */
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media(max-width:768px){
+  .menu {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu.active {
+    display: flex; /* show when active */
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li ul {
+    position: static;
+
+  }
+
+  .hamburger {
+    display: flex; /* show hamburger on mobile */
+  }
+}
+
+
+.tabx-img{
+  width: 25%;
+  display: flex;
+}
+
+        
+      
+
+    /* Carousel text style */
+    .carousel-item h2,h3{
+      font-size:2rem;
+      text-decoration: none;
+
+     
+      /*color: #8bc440;*/
+    }
+    .carousel-item h3{
+      font-size:2rem;
+      
+      /*color: #8bc440;*/
+    }
+
+    @media(max-width:768px){
+  .carousel-item h2{
+    font-size:1.5rem;
+  }
+}

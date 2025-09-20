@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halda Denim</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/customers.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"> <a href="index.html"><img href="index.html" src="img/logo.png" alt="Logo"> </a> </div>
+        <span class="hamburger">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html">About</a>
+                <ul>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#vision">Our Vision</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+                <ul>
+                    <li><a href="services.html">Sewing</a></li>
+                    <li><a href="services.html">Knitting</a></li>
+                    <li><a href="services.html">Embroidery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="products.html">Products</a>
+                <ul>
+                    <li><a href="mens.html">Men's</a></li>
+                    <li><a href="ladies.html">Ladies</a></li>
+                    <li><a href="kides.html">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html">Portfolio</a>
+               <!--  <ul>
+                    <li><a href="customers">Customers</a></li>
+                    
+                </ul> -->
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+    
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div style="height: 80%;" class="contact-box">
+                <h3>Find Us</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.379022776074!2d90.5046!3d23.6245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b87e2c8e6c7b%3A0xf13f8cf2!2sFatullah%2C%20Narayanganj!5e0!3m2!1sen!2sbd!4v1697648295176!5m2!1sen!2sbd"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+             <!-- Column 1 -->
+            <div class="footer-column">
+                <img src="img/logo.png" alt="Halda Denim" style="width:150px; margin-bottom:15px;">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61574223575518" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCqpBtyKAVyxXi81hCM1447Q" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p><i class="fa-solid fa-location-dot"></i> South Shiachar, Kutubpur, Fatullah,<br>Narayanganj,
+                    Bangladesh</p>
+                <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +880 1300-996136</p>
+                <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a
+                        href="mailto:info@haldadenim.com">info@haldadenim.com</a></p>
+                <p><i class="fa-solid fa-globe"></i> <strong>Web:</strong> <a href="http://www.haldadenim.com">www.haldadenim.com</a></p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> HALDA DENIM | <a href="mailto:manzil5656@gmail.com">MD MANZIL MIAH</a>.
+            All Rights Reserved.
+        </div>
+
+        <script>
+            // Auto update year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>

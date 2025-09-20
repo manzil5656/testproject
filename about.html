@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halda Denim</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/customers.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"> <a href="index.html"><img href="index.html" src="img/logo.png" alt="Logo"> </a> </div>
+        <span class="hamburger">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html">About</a>
+                <ul>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#vision">Our Vision</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+                <ul>
+                    <li><a href="services.html">Sewing</a></li>
+                    <li><a href="services.html">Knitting</a></li>
+                    <li><a href="services.html">Embroidery</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="products.html">Products</a>
+                <ul>
+                    <li><a href="mens.html">Men's</a></li>
+                    <li><a href="ladies.html">Ladies</a></li>
+                    <li><a href="kides.html">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html">Portfolio</a>
+                <!-- <ul>
+                    <li><a href="customers">Customers</a></li>
+                    
+                </ul> -->
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Hamburger toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <div class="content">
+                <div class="text">
+                    <p>At Halda Denim, our story began in 2020 in Narayanganj, Bangladesh. What started as a young dream
+                        has grown into a trusted name in denim and casual wear. We design and manufacture baggy jeans,
+                        trousers, jackets, and polo shirts—always keeping global fashion trends and quality standards in
+                        mind. Behind every piece is the skill of our dedicated team, who care about details from fabric
+                        to finishing. In just a few years, we’ve built partnerships across America, Europe, and the Gulf
+                        countries, earning trust through consistent quality, timely delivery, and honest commitment. But
+                        for us, it’s never just about making garments. It’s about creating style, value, and confidence
+                        for the brands we work with—and for the people who wear our products. Halda Denim: A young
+                        company with a bold vision, ready to bring your ideas to life.</p>
+                    <button id="learnMore">Learn More</button>
+                </div>
+                <div class="image">
+                    <img src="img/s02.jpg" alt="Halda Denim">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <div class="container">
+            <h2 class="text-center">Our Mission</h2>
+            <div class="content">
+                <div class="text">
+                    <p>At Halda Denim, our mission is simple: to craft denim and casual wear that combine style,
+                        comfort, and durability. We believe fashion should not only look good but also feel good and
+                        last. With a focus on quality, precision, and timely delivery, we work closely with our clients
+                        to create solutions that fit their vision and strengthen their brands. By blending modern
+                        manufacturing, skilled craftsmanship, and innovative ideas, we aim to deliver garments that
+                        stand out in global markets. More than a manufacturer, we see ourselves as a reliable
+                        partner—helping our customers grow, adapt, and succeed in an ever-changing fashion world.</p>
+                    <button id="learnMore">Learn More</button>
+                </div>
+                <div class="image">
+                    <img src="img/misson.jpg" alt="Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section">
+        <div class="container">
+            <h2 class="text-center">Our Vision</h2>
+            <div class="content">
+                <div class="text">
+                    <p>At Halda Denim, we aim to be a global leader in premium denim and casual wear, recognized for
+                        quality, innovation, and reliability. We combine modern technology with traditional craftsmanship
+                        to create products that meet today’s fashion trends while anticipating tomorrow’s needs. Our
+                        goal is to be a trusted partner for top brands worldwide, delivering garments with exceptional
+                        attention to detail. As we grow, we remain committed to long-term partnerships, outstanding
+                        service, and positive impact on communities and the environment. Halda Denim envisions a future
+                        where our brand stands for sustainability, style, and excellence in the denim industry.</p>
+                    <button id="learnMore">Learn More</button>
+                </div>
+                <div class="image">
+                    <img src="img/vision.jpg" alt="Vision">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+              <!-- Column 1 -->
+            <div class="footer-column">
+                <img src="img/logo.png" alt="Halda Denim" style="width:150px; margin-bottom:15px;">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61574223575518" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCqpBtyKAVyxXi81hCM1447Q" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p><i class="fa-solid fa-location-dot"></i> South Shiachar, Kutubpur, Fatullah,<br>Narayanganj,
+                    Bangladesh</p>
+                <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +880 1300-996136</p>
+                <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a
+                        href="mailto:info@haldadenim.com">info@haldadenim.com</a></p>
+                <p><i class="fa-solid fa-globe"></i> <strong>Web:</strong> <a href="http://www.haldadenim.com">www.haldadenim.com</a></p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> HALDA DENIM | <a href="mailto:manzil5656@gmail.com">MD MANZIL MIAH</a>.
+            All Rights Reserved.
+        </div>
+
+        <script>
+            // Auto update year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
